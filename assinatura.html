@@ -8,7 +8,45 @@
 
     <style></style>
 
-    <script></script>
+    <script>
+
+        function assinar(){
+            var nome = document.getElementById("nome");
+            if(nome.value ==""){
+                document.getElementById("nomeass").innerHTML = "Preencha o nome"
+                return;
+            }
+
+            var ramo = document.getElementById("ramo");
+            if(ramo.value == ""){
+                document.getElementById("ramoass").innerHTML = "Preencha o frase de apresentação"
+                return;
+            }
+
+            var telefone = document.getElementById("telefone");
+            if(telefone.value == ""){
+                document.getElementById("telefoneass").innerHTML = "Preencha o contato telefone"
+                return;
+            }
+
+            var email = document.getElementById("email");
+            if(email.value == ""){
+                document.getElementById("emailass").innerHTML = "Preencha o contato e-mail"
+                return;
+            }
+            
+
+            document.getElementById("nomeass").innerHTML = "Nome: " + nome.value
+            document.getElementById("ramoass").innerHTML = ramo.value
+            document.getElementById("telefoneass").innerHTML = "Phone: " + telefone.value
+            document.getElementById("emailass").innerHTML = "E-mail: " + email.value
+
+    
+            return;
+
+        }
+
+    </script>
 
 </head>
 <body>
@@ -18,6 +56,31 @@
     <p>MENU</p>
 
     <hr />
+
+    <div>
+
+        <br/>
+        <input type="text" id="nome" placeholder="Informe o nome para a assinatura">
+        <br/>
+        <input type="text" id="ramo" placeholder="Informe sua apresentação">
+        <br/>
+        <input type="tel"  id="telefone" placeholder="Informe seu contato de telefone">
+        <br/>
+        <input type="email" id="email" placeholder="Informe seu e-mail para contato">
+        <br/>
+        <button onclick="assinar()">Assinar!</button>
+        <br/>
+
+        <br/>
+        <label id="nomeass"></label>
+        <br/>
+        <label id="ramoass"></label>
+        <br/>
+        <label id="telefoneass"></label>
+        <br/>
+        <label id="emailass"></label>
+
+    </div>
 
 </body>
 </html>

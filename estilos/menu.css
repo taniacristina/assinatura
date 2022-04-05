@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: silver;
+    padding: 10px;
+    z-index: 0;
+}
+
+li.showcadastro {
+    display: inline-block
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.drop-content a {
+    text-decoration: none;
+    display: block;
+}
+
+li.showcadastro:hover .drop-content {
+    display: block;
+}
+
+.showcadastro a {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.drop-content a {
+    background-color: red;
+    margin-top: 10px;
+}
+
+.drop-content li {
+    list-style-type: none;
+}

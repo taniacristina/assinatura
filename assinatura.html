@@ -6,81 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assinatura</title>
 
-    <style></style>
-
-    <script>
-
-        function assinar(){
-            var nome = document.getElementById("nome");
-            if(nome.value ==""){
-                document.getElementById("nomeass").innerHTML = "Preencha o nome"
-                return;
-            }
-
-            var ramo = document.getElementById("ramo");
-            if(ramo.value == ""){
-                document.getElementById("ramoass").innerHTML = "Preencha o frase de apresentação"
-                return;
-            }
-
-            var telefone = document.getElementById("telefone");
-            if(telefone.value == ""){
-                document.getElementById("telefoneass").innerHTML = "Preencha o contato telefone"
-                return;
-            }
-
-            var email = document.getElementById("email");
-            if(email.value == ""){
-                document.getElementById("emailass").innerHTML = "Preencha o contato e-mail"
-                return;
-            }
-            
-
-            document.getElementById("nomeass").innerHTML = "Nome: " + nome.value
-            document.getElementById("ramoass").innerHTML = ramo.value
-            document.getElementById("telefoneass").innerHTML = "Phone: " + telefone.value
-            document.getElementById("emailass").innerHTML = "E-mail: " + email.value
-
-    
-            return;
-
-        }
-
-    </script>
+    <link rel="stylesheet" href="estilos/grid.css" />
+    <link rel="stylesheet" href="estilos/menu.css" />
 
 </head>
 <body>
-    
-    <h1>Crie sua Assinatura</h1>
+    <div class="grid-container">
+        <div class="cabecalho">Crie sua Assinatura</div>
+        <div class="menu">
+            <nav>
+                <ol>
+                    <li class="showcadastro">
+                        <a>Inicio</a>
+                        <div class="drop-content">
+                            <a href="index.html" target="central">Sobre</a>
+                        </div>
+                    </li>
+                    <li class="showcadastro">
+                        <a>Cadastro</a>
+                        <div class="drop-content">
+                            <a href="cadastroClient.html" target="central">Cliente</a>
+                            <a href="cadastroProduto.html" target="central">Produto</a>
+                        </div>
+                    </li>
+        
+                    <li class="showcadastro">
+                        <a>Consulta</a>
+                        <div class="drop-content">
+                            <a href="#">Consulta</a>
+                        </div>
+                    </li>
 
-    <p>MENU</p>
+                    <li class="showcadastro">
+                        <a>Assinatura</a>
+                        <div class="drop-content">
+                            <a href="assinatura.html" target="central">Criar assinatura</a>
+                        </div>
+                    </li>
+        
+                </ol>
+        
+            </nav>
+        </div>
+        
+        <div class="conteudo">
+            <div>
 
-    <hr />
+                <br/>
+                <input type="text" id="nome" placeholder="Informe o nome para a assinatura">
+                <br/>
+                <input type="text" id="ramo" placeholder="Informe sua apresentação">
+                <br/>
+                <input type="tel"  id="telefone" placeholder="Informe seu contato de telefone">
+                <br/>
+                <input type="email" id="email" placeholder="Informe seu e-mail para contato">
+                <br/>
+                <button onclick="assinar()">Assinar!</button>
+                <br/>
 
-    <div>
+                <br/>
+                <label id="nomeass"></label>
+                <br/>
+                <label id="ramoass"></label>
+                <br/>
+                <label id="telefoneass"></label>
+                <br/>
+                <label id="emailass"></label>
 
-        <br/>
-        <input type="text" id="nome" placeholder="Informe o nome para a assinatura">
-        <br/>
-        <input type="text" id="ramo" placeholder="Informe sua apresentação">
-        <br/>
-        <input type="tel"  id="telefone" placeholder="Informe seu contato de telefone">
-        <br/>
-        <input type="email" id="email" placeholder="Informe seu e-mail para contato">
-        <br/>
-        <button onclick="assinar()">Assinar!</button>
-        <br/>
-
-        <br/>
-        <label id="nomeass"></label>
-        <br/>
-        <label id="ramoass"></label>
-        <br/>
-        <label id="telefoneass"></label>
-        <br/>
-        <label id="emailass"></label>
-
-    </div>
-
+            </div>
+            </div>  
+            <div class="rodape"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div>
+            </div>        
 </body>
 </html>

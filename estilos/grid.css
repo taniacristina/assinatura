@@ -1,19 +1,18 @@
 .cabecalho { grid-area: cabecalho;}
-.menu { grid-area: menu; }
-.menu2 { grid-area: menu2; }
-.menu3 { grid-area: menu3; }
-.conteudo { grid-area: conteudo; }
 .rodape { grid-area: rodape; }
+.rodape2 { grid-area: rodape2; }
+.rodape3 { grid-area: rodape3; }
+.conteudo { grid-area: conteudo; }
+.menu { grid-area: menu; }
 
 .grid-container {
   display: grid;
   grid-tamplate-rows: 15% auto 15%;
   grid-template-areas:
   'cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho'
-  'menu menu2 menu2 menu2 menu3 menu3'
+  'menu menu menu menu menu menu'
   'conteudo conteudo conteudo conteudo conteudo conteudo'
-  'rodape rodape rodape rodape rodape rodape';
-  
+  'rodape rodape2 rodape2 rodape2 rodape3 rodape3';
   gap:3px;
   background-color: gray;
   padding: 3px;

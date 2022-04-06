@@ -28,14 +28,14 @@ li.showcadastro:hover .drop-content {
 }
 
 .showcadastro a {
-    background-color: blue;
+    background-color:gray;
     color: white;
     padding: 5px;
     border-radius: 5px;
 }
 
 .drop-content a {
-    background-color: red;
+    background-color: black;
     margin-top: 10px;
 }
 

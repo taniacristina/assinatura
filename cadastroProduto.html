@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assinatura</title>
+    <title>Cadastro Produto</title>
 
     <link rel="stylesheet" href="estilos/grid.css" />
     <link rel="stylesheet" href="estilos/menu.css" />
+    <link rel="stylesheet" href="estilos/cadastro.css" />
+    <script type="text/javascript" src="scripts/categoria.js"></script>
 
 </head>
-
-<body>
+<body onload="load()">
     <div class="grid-container">
         <div class="cabecalho">Crie sua Assinatura</div>
         <div class="menu">
@@ -39,25 +40,24 @@
         </div>
         
         <div class="conteudo">
-            <h2>Contato eletrônico: entenda a importância de assinar o e-mail</h2>
-            <p>https://www.direitofacil.com.br/importancia-da-assinatura-profissional-no-e-mail/</p>
-            <p>março 25, 2019</hp>
+            <input type="text" id="descricao" placeholder="Informe a descrição do produto." />
+            <input type="number" id="preco" placeholder="Informe o preço do produto." />
+            <input type="number" id="unidade" placeholder="Informe a quantidade do produto." />
+            <input type="text" id="fornecedor" placeholder="Informe o fornecedor do produto." />
+            
+            <label id = "select" for="Categoria">Categoria:</label>
+            <select id="categoria">
 
-            <img src="https://pluga.co/blog/wp-content/uploads/2016/07/exemplos-de-assunto-email-marketing-pluga.png">
-            <p>A assinatura profissional no momento de mandar um e-mail é muito importante para os negócios. Entenda porque e como criar a sua!</p>
-
-            <p>Uma das estatísticas sobre o e-mail é que até 2020 cerca de 3 bilhões de pessoas no mundo utilizarão essa ferramenta, por isso é muito 
-                importante que você imprima sua marca durante a troca de e-mails por meio de uma assinatura eletrônica.</p>
-
-            <p>Assim como cartões de visita impressos a assinatura eletrônica cumprem o mesmo papel deles só que de forma virtual.</p>
-
-            <p>aprenda aqui como criar uma assinatura de e-mail e qual é a importância de fazer isso para sua relação com os clientes.</p>
-
+            </select>
+            <hr />
+            <label id="mensagemError"></label>
+            <hr />
+            <button onclick="cadastrarClient()">CADASTRAR</button>
+            <button onclick="cancelar()">CANCELAR</button>   
         </div>  
         <div class="rodape"><a href="assinatura.html">FAÇA SUA ASSINATURA AQUI!</p></div>
         <div class="menu2"></div>
         <div class="menu3"></div>
         </div>
 </body>
-
 </html>
